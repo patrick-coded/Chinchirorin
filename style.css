@@ -16,7 +16,7 @@ main {
 }
 
 #right_side {
-  background-image: url('bg.jpeg');
+  background-image: url("images/bg.jpeg");
   background-size: 100% 100%;
 }
 
@@ -25,11 +25,13 @@ img {
   width: 150px;
 }
 
-#upper, #lower {
+#upper,
+#lower {
   border: 1px pink solid;
   padding: 10px;
 }
 
-#left_side, #right_side {
+#left_side,
+#right_side {
   border: 1px black solid;
 }
