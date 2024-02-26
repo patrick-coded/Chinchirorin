@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 5px;
+}
+
+#header {
+  border: solid 2px pink;
+  display: flex;
+  flex-direction: column; /*row column*/
+  justify-content: space-around;
+}
+
+#right_side {
+  background-image: url('bg.jpeg');
+  background-size: 100% 100%;
+}
+
+img {
+  height: 220px;
+  width: 150px;
+}
+
+#upper, #lower {
+  border: 1px pink solid;
+  padding: 10px;
+}
+
+#left_side, #right_side {
+  border: 1px black solid;
+}
