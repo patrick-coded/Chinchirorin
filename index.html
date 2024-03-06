@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Images are downloaded from pngtree.com-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -13,24 +14,48 @@
     <title>Chinchirorin!</title>
   </head>
   <body>
-    <header id="header" class="container-fluid text-center">
-      <p>Suikoden's</p>
-      <h1>CHINCHIRORIN</h1>
+    <header id="header" class="container text-center">
+      <div class="row">
+        <!-- Element 1 -->
+        <div class="col-6 text-start">
+          <img src="images/banner3.png" alt="" />
+        </div>
+        <!-- Element 2 -->
+        <div class="col-3 text-start">
+          <!-- <img src="images/banner3.png" alt="" /> -->
+        </div>
+        <!-- Element 3-->
+        <div class="col-1">
+          <img class="runes" src="images/bright_shield_rune.svg" alt="" />
+        </div>
+        <!-- Element 4-->
+        <div class="col-1">
+          <img class="runes" src="images/rune_beginning.svg" alt="" />
+        </div>
+        <div class="col-1">
+          <img class="runes" src="images/black_sword_rune.svg" alt="" />
+        </div>
+      </div>
     </header>
 
     <main class="container-fluid container-lg">
       <div class="row">
         <!-- Main window - left side -->
-        <div id="left_side" class="col-4 container">
+        <div id="left_side" class="col-5 container">
           <div id="upper" class="row">
-            <div class="card col-6 container-fluid border-danger p-0">
+            <div class="card col-3 container-fluid border-danger p-0">
               <h6 class="card-header text-center text-light bg-dark">Shilo</h6>
               <div class="card-body text-center">
-                <img src="images/shilo.webp" alt="riou" id="riou" />
+                <img
+                  class="characters"
+                  src="images/shilo.webp"
+                  alt="riou"
+                  id="riou"
+                />
               </div>
             </div>
 
-            <div class="col-6 container-fluid text-start">
+            <div class="col-9 container-fluid text-start">
               <h6>Tenkai Star</h6>
               <h6>Age: 27</h6>
               <h6>Hometown: Lakewest</h6>
@@ -48,14 +73,19 @@
               <img src="riou.webp" alt="shilo" id="riou" />
             </div> -->
 
-            <div class="card col-6 container-fluid border-danger p-0">
+            <div class="card col-3 container-fluid border-danger p-0">
               <h6 class="card-header text-center text-light bg-dark">Riou</h6>
               <div class="card-body text-center">
-                <img src="images/riou.webp" alt="riou" id="riou" />
+                <img
+                  class="characters"
+                  src="images/riou.webp"
+                  alt="riou"
+                  id="riou"
+                />
               </div>
             </div>
 
-            <div class="col-6 container-fluid text-start">
+            <div class="col-9 container-fluid text-start">
               <h6>Tenkai Star</h6>
               <h6>Age: 27</h6>
               <h6>Hometown: Lakewest</h6>
@@ -70,7 +100,23 @@
         <!-- end of left side -->
 
         <!-- main window - right side -->
-        <div id="right_side" class="col-8 bg-warning"></div>
+        <div id="right_side" class="col-7">
+          <div class="container">
+            <div class="row">
+              <div class="text-start text-light col-6">
+                <h4>Current Money</h4>
+                <div id="current_money_container">
+                  <h1 id="current_money">5000</h1>
+                </div>
+              </div>
+              <div class="text-start text-light col-6">
+                <h4>💵 Bet: <span id="bet">0</span></h4>
+                <h4>💵 Wins: <span id="bet">0</span></h4>
+                <h4>💵 Losses: <span id="bet">0</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- end of right side -->
       </div>
     </main>

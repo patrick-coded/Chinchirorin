@@ -13,16 +13,29 @@ main {
   display: flex;
   flex-direction: column; /*row column*/
   justify-content: space-around;
+  background-image: url("images/parchment-paper-background.jpg");
+  background-size: 100% 100%;
+  height: 110px;
 }
 
-#right_side {
+#header_dice {
+  width: 100px;
+  height: 100px;
+}
+
+/* #right_side {
   background-image: url("images/bg.jpeg");
   background-size: 100% 100%;
+} */
+
+.characters {
+  height: 170px;
+  width: 110px;
 }
 
-img {
-  height: 220px;
-  width: 150px;
+.runes {
+  height: 100px;
+  width: 75px;
 }
 
 #upper,
@@ -34,4 +47,14 @@ img {
 #left_side,
 #right_side {
   border: 1px black solid;
+}
+
+#right_side {
+  background-image: url("images/background.webp");
+  background-size: 100% 100%;
+}
+
+#current_money_container {
+  background-image: url("images/frame.png");
+  background-size: 100% 100%;
 }
